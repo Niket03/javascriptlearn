@@ -13,7 +13,7 @@
             {
                 document.write(arr[i] + "<br/>");
             }*/
-        var arr = new Array(7,2,8,1,3,4);
+        /*var arr = new Array(7,2,8,1,3,4);
         var i,j,temp;
         
         document.write("<br/><br/> Before Sort...<br/>");
@@ -36,6 +36,26 @@
         for(i=0;i<6;i++)
             {
                 document.write(arr[i] + "<br/>");
+            }*/
+        var arr = new Array(7,2,8,1,3,4);
+        var num = parseInt(prompt("Enter a Number to search","Enter..."));
+        var found = false;
+        
+        for(i=0;i<6;i++)
+            {
+                if(arr[i]=num)
+                    {
+                        found = true;
+                        break;
+                    }
+            }
+        if(found)
+            {
+                document.write("Element Found...");
+            }
+        else
+            {
+                document.write("Element not Found...");
             }
     </script>
 </body>
