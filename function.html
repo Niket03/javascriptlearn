@@ -2,14 +2,20 @@
     <head><title>JavaScript Demo</title></head>
 <body>
 	<script language = "javascript" type="text/javascript">
-    function sayhello()
+    /*function sayhello()
         {
-            document.write("Hello JavaScript");
+            document.write("Hello JavaScript!");
+        }*/
+        function sayHello(name,age)
+        {
+            document.write(name + "is"+ age + "Year Old.");
         }
     </script>
     <p>Click the following button to call function</p>
     <form>
-        <input type="button", onclick="sayhello()", value="Say Hello">
+        <input name ="t1", placeholder="Enter Name:"/><br/>
+        <input name ="t2", placeholder="Enter Age:"/><br/>
+        <input type="button", onclick="sayHello(t1.value, t2.value)" value="Say Hello">
     </form>
 </body>
 </html>
