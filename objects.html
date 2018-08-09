@@ -1,0 +1,24 @@
+<html>
+    <head><title>JavaScript Demo</title></head>
+<body>
+	<script language = "javascript" type="text/javascript">
+            var tutorials = {"topic" : "Javascript","trainer":"niket", "mode":"Online"};
+            
+            document.write("Topic:" + tutorials.topic);
+            document.write("<br/><br/>");
+            document.write("Traineer:" + tutorials.trainer);
+            document.write("<br/><br/>");
+            document.write("Mode:" + tutorials.mode);
+            document.write("<br/><br/>");
+        
+            var txt ="";
+            var a;
+        
+            for (a in tutorials)
+                {
+                    txt += tutorials[a] + ",";
+                }
+            document.write(txt);
+    </script>
+</body>
+</html>
